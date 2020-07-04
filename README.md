@@ -8,16 +8,19 @@
 TD3 Learning to teach a robotic arm to move towards target locations
 
 <img src="robots.gif" width="80%" align="top-left" alt="" title="Robotic Arms in action" />
+Real word examples of robotic arms. Photo Credits: [Google AI](https://ai.googleblog.com/2018/06/scalable-deep-reinforcement-learning.html)
+
 
 Objective
 ---
 ![Trained Agent][image1]
 
-Briefly, the target of this project is to establish a deep reinforcement learning (DRL) algorithm that is able to control a double-jointed robotic arm to move towards target locations. Either (1) a single robot, or (2) twenty robots can be trained at a time. At each gamestep, a reward of +0.1 is provided for a succesful contact between the robots hand and the target location. 
+Briefly, the target of this project is to establish a deep reinforcement learning (DRL) algorithm that is able to control a double-jointed robotic arm to move towards target locations. Either (1) a single robot, or (2) twenty robots can be trained at a time. At each gamestep, a reward of +0.1 is provided for a succesful contact between the robots hand and the green spheres. 
 The observation space consists of 33 variables corresponding to position, rotation, velocity, and angular velocities of the arm. Each action is a vector with four numbers, corresponding to torque applicable to two joints. Every entry in the action vector should be a number between -1 and 1.
 
+To complete this project, a consecutive mean reward of +30 needs to be collected for at least 100 episodes, either for the single agent alone or for all 20 agents pooled simultaneously. 
 
-
+To achieve this task I implemented a TD3 network as the agents core for learning an optimal policy. Herein some optimizations compared to the classical DDPG network have been made. 
 
 # Starter Code:
 
