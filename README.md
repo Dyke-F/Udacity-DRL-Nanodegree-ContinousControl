@@ -8,6 +8,7 @@
 TD3 Learning to teach a robotic arm to move towards target locations
 
 <img src="robots.gif" width="80%" align="top-left" alt="" title="Robotic Arms in action" />
+
 Real word examples of robotic arms. Photo Credits: [Google AI Blog](https://ai.googleblog.com/2018/06/scalable-deep-reinforcement-learning.html)
 
 Objective
