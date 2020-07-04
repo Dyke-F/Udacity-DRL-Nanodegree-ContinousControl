@@ -1,0 +1,19 @@
+# Network parameters
+FC1_UNITS = 400
+FCS1_UNITS = 400
+FC2_UNITS = 300
+
+# Agent parameters
+BUFFER_SIZE = int(1e5)
+BATCH_SIZE = 256
+GAMMA = 0.99
+TAU = 1e-3
+LR_ACTOR = 2e-4
+LR_CRITIC = 2e-4
+WEIGHT_DECAY = 0
+NOISE_DECAY = 0.999
+
+# Training parameters
+N_EPISODES = 2000
+MAX_T = 10000
+PRINT_EVERY = 100
