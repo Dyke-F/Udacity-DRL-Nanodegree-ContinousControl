@@ -9,7 +9,7 @@ TD3 Learning to teach a robotic arm to move towards target locations
 
 <img src="robots.gif" width="80%" align="top-left" alt="" title="Robotic Arms in action" />
 
-Real word examples of robotic arms. Photo Credits: [Google AI Blog](https://ai.googleblog.com/2018/06/scalable-deep-reinforcement-learning.html)
+Real word examples of robotic arms. Photo Credits: [Google AI Blog](https://ai.googleblog.com/2018/06/scalable-deep-reinforcement-learning.html).
 
 Objective
 ---
@@ -20,7 +20,7 @@ The observation space consists of 33 variables corresponding to position, rotati
 
 To complete this project, a consecutive mean reward of +30 needs to be collected for at least 100 episodes, either for the single agent alone or for all 20 agents pooled simultaneously. 
 
-To achieve this task I implemented a TD3 network as the agents core for learning an optimal policy. Herein some optimizations compared to the classical DDPG network have been made. 
+To achieve this task I implemented a **TD3** network as the agents core for learning an optimal policy. Herein some optimizations compared to the classical DDPG network have been made. 
 
 # Starter Code:
 
