@@ -4,12 +4,21 @@
 [image1]: https://user-images.githubusercontent.com/10624937/43851024-320ba930-9aff-11e8-8493-ee547c6af349.gif "Trained Agent"
 [image2]: https://user-images.githubusercontent.com/10624937/43851646-d899bf20-9b00-11e8-858c-29b5c2c94ccc.png "Crawler"
 
+[image3]: https://3.bp.blogspot.com/-I6UKhtpt-pI/WzP8ThUgMRI/AAAAAAAADFQ/mmbmu0YtDeAGT1RJj0pDPPm_jYyyYYg0gCLcBGAs/s1600/image8.gif
 
 # Udacity-DRL-Nanodegree-ContinousControl
 TD3 Learning to teach a robotic arm to move towards target locations
 
+![Robots][image3]
+
+
 Objective
 ---
+![Trained Agent][image1]
+
+Briefly, the target of this project is to establish a deep reinforcement learning (DRL) algorithm that is able to control a double-jointed robotic arm to move towards target locations. Either (1) a single robot, or (2) twenty robots can be trained at a time. At each gamestep, a reward of +0.1 is provided for a succesful contact between the robots hand and the target location. 
+The observation space consists of 33 variables corresponding to position, rotation, velocity, and angular velocities of the arm. Each action is a vector with four numbers, corresponding to torque applicable to two joints. Every entry in the action vector should be a number between -1 and 1.
+
 
 
 
@@ -20,12 +29,6 @@ Objective
 ### Introduction
 
 For this project, you will work with the [Reacher](https://github.com/Unity-Technologies/ml-agents/blob/master/docs/Learning-Environment-Examples.md#reacher) environment.
-
-![Trained Agent][image1]
-
-In this environment, a double-jointed arm can move to target locations. A reward of +0.1 is provided for each step that the agent's hand is in the goal location. Thus, the goal of your agent is to maintain its position at the target location for as many time steps as possible.
-
-The observation space consists of 33 variables corresponding to position, rotation, velocity, and angular velocities of the arm. Each action is a vector with four numbers, corresponding to torque applicable to two joints. Every entry in the action vector should be a number between -1 and 1.
 
 ### Distributed Training
 
