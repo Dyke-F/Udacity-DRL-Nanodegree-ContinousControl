@@ -3,8 +3,8 @@
 ## 1. Deep Reinforcement Learning Architecture
 In this project, the TD3 algorithm is implemented to solve the continous control robot task.
 - Initialise a replay buffer (from the ReplayBuffer.py file) as the agents memory
-  Replay buffer holds BUFFER_SIZE number of training exploration and samples BATCH_SIZE number of these for learning iteratively at each step.
-- A online / local actor (policy) and critic (Q-value) network is initialized. 
+- Replay buffer holds BUFFER_SIZE number of training exploration and samples BATCH_SIZE number of these for learning iteratively at each step.
+- An online / local actor (policy) and critic (Q-value) network is initialized. 
 - Soft updates are used for adjusting the weight matrices in the corresponding actor and critic target networks
 ### TD3 learning:
   - TD3 is similar to DDPG learning, however stabilizes value estimations through generating two Q-networks (pair, thus the name Twin in TD3)
