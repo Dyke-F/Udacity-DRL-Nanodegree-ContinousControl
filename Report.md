@@ -58,5 +58,5 @@ PRINT_EVERY = 100           # control statistics outputs
 
 ## 4. Outlook
 - [Rainbow](https://arxiv.org/pdf/1710.02298.pdf): Rainbow networks apply several improvements over the classical DQN network and might help improving performance of the Critic's Q-value estimation.
-- [Asynchronous Actor Critic](https://arxiv.org/pdf/1602.01783.pdf): Here multile independant agents are created in the environment and trained in parallel. 
+- [Asynchronous Actor Critic](https://arxiv.org/pdf/1602.01783.pdf): Here multiple independant agents are created in the environment and trained in parallel. 
 - [Monte Carlo Tree Search](https://science.sciencemag.org/content/362/6419/1140/tab-pdf): Currently, the TD3 model as implemented here only consides deciding on the next state based on the current state. In Monte Carlo Tree Search a parent tree with multiple leaf nodes can be created to expand looking into the future not only towards the next state, but towards n number of states in the future and deciding the current strategy based on possible favourable decisions that lay much further in the future.
