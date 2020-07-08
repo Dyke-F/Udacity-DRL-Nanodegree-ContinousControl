@@ -54,7 +54,7 @@ PRINT_EVERY = 100           # control statistics outputs
 ## 3. Opinion
 ![SingleScores](./Single_Agent_Score.png)
 
-### TD3 Learning appears to hold great promise in improving deep reinforcement learning techniques, as compared to many other algorithms to solve this task that I found online, it reaches a high quality policy very fast. Moreover, despite one single around epoch 55-60, it appears much more stable than classical DDPG or PPO solutions i tried out in direct comparison and in the end achieves very stable results with average scores continously over 35. In parallel learning however it takes quite a while to execute, so although the total number of epochs to achieve a stable policy is much lower than in other algorithms, the high quality might go at the expense of higher training times.
+### TD3 Learning appears to hold great promise in improving deep reinforcement learning techniques, as compared to many other algorithms to solve this task that I found online, it reaches a high quality policy very fast. Moreover, despite one single collapse around epoch 55-60 (from which the policy recovered immediately), it appears much more stable than classical DDPG or PPO solutions that I tried out in direct comparison and in the end achieves very stable results with average scores continously over 35. In parallel learning however it takes quite a while to execute, so although the total number of epochs to achieve a stable policy is much lower than in other algorithms, the high quality might go at the expense of higher training times.
 
 ## 4. Outlook
 - [Rainbow](https://arxiv.org/pdf/1710.02298.pdf): Rainbow networks apply several improvements over the classical DQN network and might help improving performance of the Critic's Q-value estimation.
