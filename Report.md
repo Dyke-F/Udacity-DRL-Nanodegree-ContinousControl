@@ -52,7 +52,11 @@ PRINT_EVERY = 100           # control statistics outputs
 ```
 
 ## 3. Opinion
+![SingleScores](./Single_Agent_Score.png)
+
 ### TD3 Learning appears to hold great promise in improving deep reinforcement learning techniques, as compared to many other algorithms to solve this task that I found online, it reaches a high quality policy very fast. Moreover, despite one single around epoch 55-60, it appears much more stable than classical DDPG or PPO solutions i tried out in direct comparison and in the end achieves very stable results with average scores continously over 35. In parallel learning however it takes quite a while to execute, so although the total number of epochs to achieve a stable policy is much lower than in other algorithms, the high quality might go at the expense of higher training times.
 
 ## 4. Outlook
-
+- [Rainbow](https://arxiv.org/pdf/1710.02298.pdf) Rainbow networks apply several improvements over the classical DQN network and might help improving performance of the Critic's Q-value estimation.
+- [Asynchronous Actor Critic](https://medium.com/emergent-future/simple-reinforcement-learning-with-tensorflow-part-8-asynchronous-actor-critic-agents-a3c-c88f72a5e9f2) Here multile independant agents are created in the environment and trained in parallel. 
+-[Monte Carlo Tree Search](https://science.sciencemag.org/content/362/6419/1140/tab-pdf) Currently, the TD3 model as implemented here only consides deciding on the next state based on the current state. In Monte Carlo Tree Search a parent tree with multiple leaf nodes can be created to expand looking into the future not only towards the next state, but towards n number of states in the future and deciding the current strategy based on possible favourable decisions that lay much further in the future.
